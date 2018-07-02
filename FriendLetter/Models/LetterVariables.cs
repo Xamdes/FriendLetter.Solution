@@ -30,4 +30,17 @@ namespace FriendLetter.Models
       _sender = newSender;
     }
   }
+
+  public class Location
+  {
+    private string _location;
+    public Location(string location)
+    {
+      _location = location;
+    }
+    public string GetLocation()
+    {
+      return _location;
+    }
+  }
 }
