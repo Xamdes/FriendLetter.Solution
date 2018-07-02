@@ -1,0 +1,2 @@
+cd FriendLetter/
+dotnet run
