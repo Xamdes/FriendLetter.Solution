@@ -10,9 +10,13 @@ namespace FriendLetter.Controllers
     public ActionResult Hello()
     {
       LetterVariable myLetterVariable = new LetterVariable();
-      //myLetterVariable.Recipient = "Jessica";
-      // myLetterVariable.SetRecipient("Jessica");
       return View(myLetterVariable);
+    }
+
+    [Route("/form")]
+    public ActionResult Form()
+    {
+      return View();
     }
 
     [Route("/hello")]
