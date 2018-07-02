@@ -1,3 +1,2 @@
-read message
 git add .
-git-pair-commit -m $message
+git-pair-commit -m "$1"
