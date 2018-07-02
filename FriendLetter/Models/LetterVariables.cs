@@ -43,4 +43,28 @@ namespace FriendLetter.Models
       return _location;
     }
   }
+
+  public class Album
+  {
+    string _title,_artist,_price;
+    public Album(string title, string artist, string price)
+    {
+      _title = title;
+      _artist = artist;
+      _price = price;
+    }
+    public string GetTitle()
+    {
+      return _title;
+    }
+    public string GetArtist()
+    {
+      return _artist;
+    }
+    public string GetPrice()
+    {
+      return _price;
+    }
+
+  }
 }

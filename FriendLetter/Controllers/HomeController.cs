@@ -29,6 +29,16 @@ namespace FriendLetter.Controllers
       return View("Hello", myLetterVariable);
     }
 
+    [Route("/cd")]
+    public ActionResult Albums()
+    {
+      Album[] testOne = new Album[3];
+      testOne[0] = new Album("One", "Traul", "5");
+      testOne[1] = new Album("Thrice", "Ipsum", "12");
+      testOne[2] = new Album("Quad", "Septim", "3");
+      return View(testOne);
+    }
+
     [Route("/hello")]
     public string HelloFriend()
     {
